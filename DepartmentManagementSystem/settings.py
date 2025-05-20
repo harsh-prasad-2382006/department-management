@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-olux1=g&8qs5(9a!x94905n_-7apk)^vgtki17z@g)tiyjt6=e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "52.66.239.49",
+    "*",  # ✅ Just the domain, no protocol
+]
 
 
 # Application definition
