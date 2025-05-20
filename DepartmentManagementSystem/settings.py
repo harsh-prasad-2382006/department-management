@@ -29,7 +29,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost",
     "52.66.239.49",
-    "*",  # ✅ Just the domain, no protocol
+    "department-management-2tat.onrender.com",  # ✅ Just the domain, no protocol
 ]
 
 
@@ -126,3 +126,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://department-management-2tat.onrender.com",
+]
